@@ -440,10 +440,15 @@
 									<!--begin::Image-->
 									<div
 										class="d-flex flex-center flex-shrink-0 bg-light rounded w-100px h-100px w-lg-150px h-lg-150px me-7 mb-4">
-										<i class="ki-duotone ki-picture fs-6x">
-											<span class="path1"></span>
-											<span class="path2"></span>
-										</i>
+										<div class="mt-2">
+											<a class="btn btn-primary" href="view-image.html">
+												<i class="ki-duotone ki-picture fs-2x">
+													<span class="path1"></span>
+													<span class="path2"></span>
+												</i>
+												<br>
+											View Image</a>
+										</div>
 									</div>
 									<!--end::Image-->
 									<!--begin::Wrapper-->
@@ -460,15 +465,15 @@
 												</div>
 												<!--end::Status-->
 												<!--begin::Description-->
-												<div class="d-flex flex-wrap fw-semibold mb-2 fs-5 text-gray-500">
+												<div class="d-flex flex-wrap fw-semibold mb-4 fs-5 text-gray-500">
 													<code
 														class="fw-bold m-0">SOP Instance Id - 687435.095681.450935</code>
 												</div>
-												<div class="d-flex flex-wrap fw-semibold mb-2 fs-5 text-gray-500">
+												<div class="d-flex flex-wrap fw-semibold mb-4 fs-5 text-gray-500">
 													<code
 														class="fw-bold m-0">Study Instance Id - 126794.876525.923584</code>
 												</div>
-												<div class="d-flex flex-wrap fw-semibold mb-2 fs-5 text-gray-500">
+												<div class="d-flex flex-wrap fw-semibold mb-4 fs-5 text-gray-500">
 													<code
 														class="fw-bold m-0">Series Instance Id - 864509.245684.257906</code>
 												</div>
@@ -477,13 +482,16 @@
 											<!--end::Details-->
 											<!--begin::Actions-->
 											<div class="d-flex mb-4">
-												<a href="#" class="btn btn-sm btn-primary me-3">Reports</a>
-												<a href="#" class="btn btn-sm btn-danger me-3">Delete</a>
+												<select class="form-select-sm form-select-solid text-bg-secondary text-gray-500 me-2">
+													<option value="">Actions</option>
+													<option value="">Resend</option>
+													<option value="">Report</option>
+													<option value="">Delete</option>
+												</select>
 												<select class="form-select-sm form-select-solid text-bg-secondary text-gray-500">
 													<option value="">Download</option>
 													<option value="">DiCOM</option>
 													<option value="">PNG</option>
-													<option value="">Klinik Sentral</option>
 												</select>
 											</div>
 											<!--end::Actions-->
@@ -493,32 +501,12 @@
 										<div class="d-flex flex-wrap justify-content-start">
 											<!--begin::Stats-->
 											<div class="d-flex flex-wrap">
-												<!--begin::Stat-->
-												<div
-													class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
-													<!--begin::Number-->
-													<div class="d-flex align-items-center">
-														<div class="fs-4 fw-bold">11-Dec-2024 11:45 AM</div>
-													</div>
-													<!--end::Number-->
-													<!--begin::Label-->
-													<div class="fw-semibold fs-6 text-gray-500">Created</div>
-													<!--end::Label-->
+												<div class="me-2">
+													<span class="fw-bold text-muted">Created:</span> <span class="fw-bold fs-5">11-Dec-2024 11:45 AM</span>
 												</div>
-												<!--end::Stat-->
-												<!--begin::Stat-->
-												<div
-													class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
-													<!--begin::Number-->
-													<div class="d-flex align-items-center">
-														<div class="fs-4 fw-bold">12-Dec-2024 11:23 AM</div>
-													</div>
-													<!--end::Number-->
-													<!--begin::Label-->
-													<div class="fw-semibold fs-6 text-gray-500">Updated</div>
-													<!--end::Label-->
+												<div>
+													<span class="fw-bold text-muted">Updated:</span> <span class="fw-bold fs-5">12-Dec-2024 11:45 AM</span>
 												</div>
-												<!--end::Stat-->
 											</div>
 											<!--end::Stats-->
 										</div>
